@@ -1,3 +1,3 @@
-class {{name.snakeCase()}}Model {
+class {{name.pascalCase()}}Model {
   
 }

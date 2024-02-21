@@ -1,11 +1,14 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../domain/repository/{{name.snakeCase()}}_repo.dart';
-import '{{name.snakeCase()}}_state.dart';
+import '../domain/repo/{{name.snakeCase()}}_repo.dart';
 import '/utlis/network/networkClient.dart';
 
-class {{name.snakeCase()}}Cubit extends Cubit<{{name.snakeCase()}}State> {
-  {{name.snakeCase()}}Cubit() : super({{name.snakeCase()}}Initial());
-  static {{name.snakeCase()}}Cubit get(context) => BlocProvider.of(context);
+part '{{name.snakeCase()}}_state.dart';
+
+
+class {{name.pascalCase()}}Cubit extends Cubit<{{name.pascalCase()}}State> {
+  {{name.pascalCase()}}Cubit() : super({{name.pascalCase()}}Initial());
+  static {{name.pascalCase()}}Cubit get(context) => BlocProvider.of(context);
   
- {{name.snakeCase()}}Repo {{name.snakeCase()}}_Repo =  {{name.snakeCase()}}Repo(NetworkClient.instance);
+ {{name.pascalCase()}}Repo {{name.snakeCase()}}Repo =  {{name.pascalCase()}}Repo(NetworkClient.instance);
 }

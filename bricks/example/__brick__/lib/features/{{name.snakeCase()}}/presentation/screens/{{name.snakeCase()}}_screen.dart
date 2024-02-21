@@ -2,16 +2,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../cubit/{{name.snakeCase()}}_cubit.dart';
-import '../../cubit/{{name.snakeCase()}}_state.dart';
 
-class {{name.snakeCase()}}Screen extends StatefulWidget {
-  const {{name.snakeCase()}}Screen({Key? key}) : super(key: key);
+class {{name.pascalCase()}}Screen extends StatefulWidget {
+  const {{name.pascalCase()}}Screen({Key? key}) : super(key: key);
 
   @override
-  State<{{name.snakeCase()}}Screen> createState() => _{{name.snakeCase()}}ScreenState();
+  State<{{name.pascalCase()}}Screen> createState() => _{{name.pascalCase()}}ScreenState();
 }
 
-class _{{name.snakeCase()}}ScreenState extends State<{{name.snakeCase()}}Screen> {
+class _{{name.pascalCase()}}ScreenState extends State<{{name.pascalCase()}}Screen> {
   @override
   void initState() {
     super.initState();
@@ -20,18 +19,18 @@ class _{{name.snakeCase()}}ScreenState extends State<{{name.snakeCase()}}Screen>
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create:(context)=>  {{name.snakeCase()}}Cubit(),
-    child:  BlocConsumer<{{name.snakeCase()}}Cubit, {{name.snakeCase()}}State>(
+      create:(context)=>  {{name.pascalCase()}}Cubit(),
+    child:  BlocConsumer<{{name.pascalCase()}}Cubit, {{name.pascalCase()}}State>(
         listener: (context, state) {
           // TODO: implement listener
         },
         builder: (context, state) {
-          final cubit = {{name.snakeCase()}}Cubit.get(context);
+          final cubit = {{name.pascalCase()}}Cubit.get(context);
           return Scaffold(
             body: SafeArea(
               child: Column(
                 children: [
-                  Text("{{name.snakeCase()}}Screen"),
+                  Text("{{name.pascalCase()}}Screen"),
       
                   
                 ],
