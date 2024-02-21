@@ -1,0 +1,3 @@
+class {{name.snakeCase()}}Model {
+  
+}

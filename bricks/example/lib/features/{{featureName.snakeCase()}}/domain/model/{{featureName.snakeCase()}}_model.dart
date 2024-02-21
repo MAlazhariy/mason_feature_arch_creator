@@ -1,3 +1,0 @@
-class {{featureName.snakeCase()}}Model {
-  
-}
