@@ -4,7 +4,6 @@ A new Flutter project to simplfy the structure and save time for creating projer
 
 ## Getting Started
 
-# 🎯 Activate 
 dart pub global activate mason_cli
 dart pub global activate mason
 mason init     //will create mason.yaml
