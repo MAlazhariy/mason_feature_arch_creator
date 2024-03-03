@@ -1,6 +1,6 @@
 # mason
 
-A new Flutter project.
+A new Flutter project to simplfy the structure and save time for creating projerct features.
 
 ## Getting Started
 
@@ -19,7 +19,7 @@ we only need __brick__ and brick.yaml
 Create folder named bricks and move the folder created by the previous command on it
 
 
-bricks>feature>__brick___
+bricks>feature>__brick__
 bricks>feature>brick.yaml
 
 Then add cubit and project modules inside __bricks___
