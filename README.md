@@ -36,3 +36,10 @@ Don’t forget add packages that we depend on like dio and bloc in pub spec.yaml
 dio: ^5.4.1
 flutter_bloc: ^8.1.4
 Also inside lib don’t forget to add networkClient file and appUrl file in the structure inside const and utils
+
+
+Also go to settings(comaned+,) and add this
+"dart.analysisExcludedFolders": [
+        "bricks"
+    ],
+
