@@ -2,6 +2,10 @@
 
 A new Flutter project to simplfy the structure and save time for creating projerct features.
 
+## Documentation
+
+https://docs.brickhub.dev/
+
 ## Getting Started
 
 dart pub global activate mason_cli
